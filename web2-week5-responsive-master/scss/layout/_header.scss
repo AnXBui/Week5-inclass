@@ -3,18 +3,28 @@
 ============= */
 header {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto 50%;
     padding: 10px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
 
-    nav {
-        i {
-            font-size: rem-calc(30);
-            margin-top: 8px;
-        }
+    >section{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      i{
+        font-size: rem-calc(30px);
+      }
     }
 
+
+
     aside {
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
 
         a:link,
         a:visited {
